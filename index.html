@@ -7,13 +7,15 @@
     <meta name="author" content="Pamela Oliveira">
     <meta name="keywords" content="HTML, CSS, Javascript">
 
-    <link rel="icon" type="image/svg" href="assets/img/favicon.svg" />
+    <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Meu Perfil</title>
 </head>
 <body>
     <header>
-        <div id="header_content">
+        <div id="header_content" class="flex">
             <div id="titulo">
                 <h1>Pamela Oliveira</h1>
             </div>
@@ -34,36 +36,30 @@
     </header>
 
     <main>
-        <section id="about">
+        <section id="about" class="flex_start">
             <h2>Sobre mim</h2>
 
-            <div id="conteudo">
-                <img src="assets/img/image.png" alt="Foto da criadora desse conteúdo" width="400" height="400" />
+            <div id="conteudo" class="flex">
+                <img src="./assets/img/image.png" alt="Foto da criadora desse conteúdo" class="img_profile" />
 
                 <article id="sobre_texto">
                     <p>
-                        Desenvolvedora Back-end (em formação full-stack)
-                        🚀 Atualmente estudando React e Java
-                        💻 Já trabalhei com Node.js, NestJS, TypeScript, bancos de dados relacionais (PostgreSQL, MySQL)
-                        e NoSQL (MongoDB, Redis), mensageria com Redis e Apache Kafka, além de testes com Jest
+                        Desenvolvedora Back-end (em formação full-stack) — Atualmente estudando React e Java 🚀 
                     </p>
                     <p>
-                        Iniciei minha trajetória como estagiária de informática em uma escola
-                        municipal e, depois, atuei com suporte técnico, desenvolvendo escuta
-                        ativa e uma visão mais humana da tecnologia. Atuei também em
-                        projetos de infraestrutura digital no setor da saúde, com foco em
-                        eficiência e resolução de problemas. Sou desenvolvedora com
-                        conhecimento em Node.js, TypeScript, bancos de dados relacionais e
-                        NoSQL, Git/GitHub e cibersegurança. Atualmente, faço um bootcamp em
-                        Java e React para ampliar meu repertório e atuar com novas tecnologias.
+                        Iniciei minha trajetória como estagiária de informática em uma escola municipal e, depois,
+                        atuei com suporte técnico. Atuei também em projetos de infraestrutura digital no setor da
+                        saúde, com foco em eficiência e resolução de problemas, trabalhei com Node.js, NestJS,
+                        TypeScript, bancos de dados relacionais (PostgreSQL, MySQL) e NoSQL (MongoDB, Redis),
+                        mensageria com Redis e Apache Kafka, além de testes com Jest 💻
                     </p>
                 </article>
             </div>
         </section>
 
-        <section id="video">
+        <section id="video" class="flex_start">
             <h2>Vídeo de uma das minhas músicas favoritas:</h2>
-            <div class="youtube">
+            <div id="youtube" class="flex">
                 <iframe
                     width="560"
                     height="315"
@@ -79,16 +75,16 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="flex">
         <section id="redes_sociais">
             <a href="">
-                <img src="assets/img/linkedin.svg" alt="Linkedin" />
+                <img src="./assets/img/linkedin.svg" alt="LinkedIn" class="social_icon">
             </a>
             <a href="">
-                <img src="assets/img/github.svg" alt="GitHub" />
+                <img src="./assets/img/github.svg" alt="GitHub" class="social_icon">
             </a>
             <a href="">
-                <img src="assets/img/instagram.svg" alt="Instagram" />
+                <img src="./assets/img/instagram.svg" alt="Instagram" class="social_icon">
             </a>
         </section>
 

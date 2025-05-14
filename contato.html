@@ -7,14 +7,19 @@
     <meta name="author" content="Pamela Oliveira">
     <meta name="keywords" content="HTML, CSS, JavaScript">
 
+    <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Meu Perfil</title>
 </head>
 <body>
     <header>
-        <div id="header_content">
+        <div id="header_content" class="flex">
             <div id="titulo">
                 <h1>Pamela Oliveira</h1>
             </div>
+
             <div id="menu">
                 <nav>
                     <ul id="menu">
@@ -31,7 +36,7 @@
     </header>
 
     <main>
-        <section id="contact">
+        <div id="contact" class="flex">
             <form action="#" method="submit" id="formulario">
                 <label for="nome">Nome: </label>
                 <input
@@ -69,14 +74,16 @@
                     name="message"
                     placeholder="Digite sua mensagem"
                     required
-                    >
-                </textarea>
+                    ></textarea>
                 <button type="submit">Enviar</button>
             </form>
 
-            <article>
-                <p>Jardim Silveira, Barueri</p>
-                <p>São Paulo - SP</p>
+            <section id="mapa" class="flex_start">
+                <div id="endereco">
+                    <p>Jardim Silveira, Barueri</p>
+                    <p>São Paulo - SP</p>
+                </div>
+
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7316.253790948516!2d-46.8901993!3d-23.527937950000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0155e1f564ed%3A0xe0ce7674462172e9!2sJardim%20Silveira%2C%20Barueri%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1747083837361!5m2!1spt-BR!2sbr"
                     width="400"
@@ -89,20 +96,20 @@
                     id="mapa"
                     >
                 </iframe>
-            </article>
-        </section>
+            </section>
+        </div>
     </main>
 
-    <footer>
+    <footer class="flex">
         <section id="redes_sociais">
             <a href="">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn">
+                <img src="./assets/img/linkedin.svg" alt="LinkedIn" class="social_icon">
             </a>
             <a href="">
-                <img src="assets/img/github.svg" alt="GitHub">
+                <img src="./assets/img/github.svg" alt="GitHub" class="social_icon">
             </a>
             <a href="">
-                <img src="assets/img/instagram.svg" alt="Instagram">
+                <img src="./assets/img/instagram.svg" alt="Instagram" class="social_icon">
             </a>
         </section>
         
